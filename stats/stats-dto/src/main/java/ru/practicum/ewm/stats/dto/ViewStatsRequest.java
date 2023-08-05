@@ -16,14 +16,14 @@ public class ViewStatsRequest {
 
     @NotNull
     @DateTimeFormat(pattern = Variables.DATE_FORMAT)
-    LocalDateTime start;
+    private LocalDateTime start;
 
     @NotNull
     @DateTimeFormat(pattern = Variables.DATE_FORMAT)
-    LocalDateTime end;
+    private LocalDateTime end;
 
     @JsonSetter(nulls = Nulls.AS_EMPTY)
-    List<String> uris;
+    private List<String> uris;
 
-    boolean unique;
+    private boolean unique;
 }

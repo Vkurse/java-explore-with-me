@@ -6,6 +6,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class UriCountProjection {
-    String uri;
-    Long count;
+    private String uri;
+    private Long count;
 }
