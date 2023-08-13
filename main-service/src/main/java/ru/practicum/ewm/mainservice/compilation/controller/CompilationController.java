@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import ru.practicum.ewm.mainservice.compilation.mapper.CompilationMapper;
+import ru.practicum.ewm.mainservice.compilation.Mapper.CompilationMapper;
 import ru.practicum.ewm.mainservice.compilation.dto.CompilationDto;
 import ru.practicum.ewm.mainservice.compilation.entity.Compilation;
 import ru.practicum.ewm.mainservice.compilation.service.CompilationService;

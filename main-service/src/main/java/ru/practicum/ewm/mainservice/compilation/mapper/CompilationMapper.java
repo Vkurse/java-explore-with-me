@@ -1,4 +1,4 @@
-package ru.practicum.ewm.mainservice.compilation.mapper;
+package ru.practicum.ewm.mainservice.compilation.Mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

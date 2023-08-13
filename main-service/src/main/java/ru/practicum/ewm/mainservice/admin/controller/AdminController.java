@@ -19,7 +19,7 @@ import ru.practicum.ewm.mainservice.category.dto.NewCategoryDto;
 import ru.practicum.ewm.mainservice.category.entity.Category;
 import ru.practicum.ewm.mainservice.category.mapper.CategoryMapper;
 import ru.practicum.ewm.mainservice.category.service.CategoryService;
-import ru.practicum.ewm.mainservice.compilation.mapper.CompilationMapper;
+import ru.practicum.ewm.mainservice.compilation.Mapper.CompilationMapper;
 import ru.practicum.ewm.mainservice.compilation.dto.CompilationDto;
 import ru.practicum.ewm.mainservice.compilation.dto.NewCompilationDto;
 import ru.practicum.ewm.mainservice.compilation.dto.UpdateCompilationDTO;
