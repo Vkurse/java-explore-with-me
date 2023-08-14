@@ -73,12 +73,12 @@ public class ParticipationRequestService {
         return requestRepository.findByInitiatorIdAndEventId(userId, eventId);
     }
 
-    public Map<Boolean, List<ParticipationRequest>> patchRequestsFromInitiator(long userId, long eventId,
-                                                                               EventRequestStatusUpdateRequest updateStatusRequest) {
+    public Map<Boolean, List<ParticipationRequest>> updateRequestsFromInitiator(long userId, long eventId,
+                                                                                EventRequestStatusUpdateRequest updateStatusRequest) {
         List<ParticipationRequest> requests = requestRepository
                 .findRequests(userId, eventId, updateStatusRequest.getRequestIds());
         if (requests.isEmpty()) {
-            throw new NotFoundException("Event with id={0} was not found", eventId);
+            throw new NotFoundException("Request from event with id={0} was not found", eventId);
         }
         Event event = requests.get(0).getEvent();
         AtomicInteger limit = new AtomicInteger(event.getParticipantLimit() - event.getConfirmedRequests());

@@ -89,7 +89,7 @@ public class UserController {
                                                                      EventRequestStatusUpdateRequest request) {
         log.info("Patch requests of participants in event with ID={} from initiator with ID={}", eventId, userId);
         Map<Boolean, List<ParticipationRequest>> requests = participationRequestService
-                .patchRequestsFromInitiator(userId, eventId, request);
+                .updateRequestsFromInitiator(userId, eventId, request);
         EventRequestStatusUpdateResult result = new EventRequestStatusUpdateResult();
         result.setConfirmedRequests(requests.get(true).stream()
                 .map(participationRequestMapper::toDto)
