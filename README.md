@@ -1,3 +1,3 @@
 # java-explore-with-me
 Template repository for ExploreWithMe project.
-https://github.com/kurbatovik/java-explore-with-me/pull/7
+https://github.com/Vkurse/java-explore-with-me/pull/5
